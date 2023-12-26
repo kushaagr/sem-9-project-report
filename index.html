@@ -294,39 +294,48 @@
         <ol>
             <li>
                 <span class="main-heading">Brief Description</span>
-                <p>Offline note-taking with strategic organization empowers individuals to enhance their productivity and streamline information management. In a digital era where data overload is a common challenge, adopting a strategic approach to organizing offline notes becomes crucial for extracting maximum value from gathered information. By incorporating well-thought-out tagging systems and meticulous categorization, users can effortlessly retrieve and make sense of their notes. This method not only fosters a more efficient workflow but also cultivates a sense of order amidst the vast sea of information. Whether for work, study, or personal projects, mastering the art of offline note-taking with strategic organization enables individuals to transform their note repositories into dynamic, accessible knowledge hubs tailored to their specific needs. It's about more than just capturing thoughts; it's about curating a valuable resource that empowers individuals to navigate the complexities of their lives with ease and purpose.
+                <p>The problem statement is of correctly categorizing your knowledge
+                base such that you can retrieve the desired information in fast and
+                efficient way. 
                 </p>
-                <p>
+                
+                <p>Managing a substantial number of notes, often ranging from 100 to 200 or more, poses challenges in effective
+                categorization and retrieval. While approximately half of the notes can be organized into meaningful
+                categories, the rest remain in a ’Miscellaneous’ category. This results in a time-consuming and
+                cumbersome retrieval process. The ”Personal Knowledge Management Toolkit” aims to address this
+                issue by creating an abstract graph of related notes, enhancing organization, and simplifying access.
                 </p>
 
-                <p> No formal knowledge is needed for the user to use this system. Thus by this all it 
-                proves it is user friendly. Acropolis Event Timeline website, as described above, can 
-                lead to error free, secure, reliable and fast logging system. It can assist 
-                the user to concentrate in their other activities rather to concentrate on the 
-                record keeping. Thus it will help organization in better utilization of 
-                resources. </p>
+                <p>Offline note-taking with strategic organization empowers individuals to enhance their productivity and streamline information management. In a digital era where data overload is a common challenge, adopting a strategic approach to organizing offline notes becomes crucial for extracting maximum value from gathered information. By incorporating well-thought-out tagging systems and meticulous categorization, users can effortlessly retrieve and make sense of their notes. This method not only fosters a more efficient workflow but also cultivates a sense of order amidst the vast sea of information. Whether for work, study, or personal projects, mastering the art of offline note-taking with strategic organization enables individuals to transform their note repositories into dynamic, accessible knowledge hubs tailored to their specific needs. It's about more than just capturing thoughts; it's about curating a valuable resource that empowers individuals to navigate the complexities of their lives with ease and purpose.
+                </p>
+
             </li>
             <li><span class="main-heading">Objectives</span>
                 <ol>
-                    <li>To create an always available (online) platform to check and post </li>
-                    <li>To make it easy for any faculty to view past events and participation.</li>
-                    <li>To create an easy means of entering and modifying data related to events.</li>
-                    <li>To create a chronological timeline of events required when AICTE inpsection happens.</li>
+                    <li>To be able to quickly bulk edit notes</li>
+                    <li>To be able to select and tag many notes at once</li>
+                    <li>To be able to quickly scroll over present notes.</li>
+                    <li>To find notes fast without even using search.</li>
+                    <li>To collect notes into a group rather than put them into pre-defined buckets.</li>
                 </ol>
             </li>
+
+        </ol>
+
+    </section>
+
+    <section class="page">
+        <ol class="start-from-3">
             <li><span class="main-heading">Methodology / Planning of work</span>
                 <ol>
-                    <li>Gather details on what data is accounted and how it is used.</li>
-                    <li>Inquire current system details</li>
-                    <li>List edge cases</li>
-                    <li>List roadblocks</li>
-                    <li>Find solution to roadblocks</li>
-                    <li>Prepare a working prototype</li>
-                    <li>Finalize and test code</li>
+                    <li>Gather details on current toolchain and ecosystem of offline note-taking.</li>
+                    <li>Observe usage patterns and note-taking habits of individual.</li>
+                    <li>Try various many techniques and combine their approach.</li>
+                    <li>Fail fast, experiment with prototypes, and encorporate criticism.</li>
+                    
                 </ol>
             </li>
         </ol>
-
     </section>
 
     <section class="page">
@@ -336,13 +345,14 @@
                 <ol>
                     <li>
                         <span class="sub-heading">Technical Feasibility</span>
-                        <p>This included the study of function, performance and constraints 
-                        that may affect the ability to achieve an acceptable system. For 
-                        this feasibility study, we studied complete functionality to be 
-                        provided in the system, as described in the System Requirement 
-                        Specification (SRS), and checked if everything was possible using 
-                        different type of frontend and backend platforms.
+                        <p>System Architecture: The solution will be designed to integrate seamlessly with existing note-taking applications. Compatibility with various platforms and devices will be ensured to maximize accessibility.</p>
+                        <p>The system utilizes widespread note-taking format: Markdown, and it's capacity to store YAML content as its frontmatter.</p>
+
+                        <p>Data Storage: The system will require minimal additional storage, as tagging and metadata can be implemented efficiently within existing note structures.</p>
+
+                        <p>Security: Since the system is offline and operates locally it provides robust security ensuring no data is sent for telemetry to any source.
                         </p>
+
                     </li>
                     <li>
                         <span class="sub-heading">Economic Feasibility</span>
@@ -351,23 +361,22 @@
                         project. We decided the technology based on minimum possible cost 
                         factor.
                         <ol class="roman-list">
-                            <li>All hardware and software cost has to be borne by the 
-                            organization.</li>
-                            <li>Overall we have estimated that the benefits the organization 
-                            is going to receive from the proposed system will surely overcome 
-                            the initial costs and the later on running cost for system.</li>
+                            <li>The application is free to use but the availability is limited.</li>
+                            <li>The application could be open-sourced and freely distributed
+                            or monetized for a fee. There are no recurring costs to application.</li>
                         </ol>
                         </p>
                     </li>
                     <li>
                         <span class="sub-heading">Behavioural feasibility</span>
-                        <p>No doubt the proposed system is fully GUI based that is very user 
-                        friendly and all inputs to be taken all self-explanatory even to a 
-                        layman. Besides, a proper training has been conducted to let know 
-                        the essence of the system to the users so that they feel comfortable 
-                        with new system. As far our study is concerned the clients are 
-                        comfortable and happy as the system has cutdown their loads and 
-                        doing.
+                        <p>No doubt the proposed system is partially GUI based but is very user 
+                        friendly. Input needs to be documented to be accessible by any individual. 
+                        A proper training may not be neccessary as the documentation when provided
+                        would provide all the commands the application can execute as the commands
+                        themselves are designed to be intuitive and user would get the hang of it 
+                        after using it for few times. Users are willing to use a piece of software
+                        as long as it prevents them from painstaking labor work of doing trivial
+                        chores.
                         </p>
                     </li>
                 </ol>
@@ -390,40 +399,37 @@
                 <ol>
                     <li class="sub-heading"> Identification of need
                         <span class="sub-heading">existing system</span>
-                        <p>In the current system whenever an inspection body such 
-                            as AICTE requires account of all join-effort put-in by 
-                            students and college body, the faculties circulate a spreadsheet to create a 
-                            list. The spreadsheet is juggled department-to-department. 
-                            This creates a problem of keeping track of spreadsheet updations. The 
-                            next problem faced is with data entry, for which faculties ask 
-                            students to give a note on relevant events hosted by their 
-                            department or their participation in off-campus events.
+                        <p>In the current system, a user either follows a top-down approach
+                        of categorizing notes or wastes time linearly searching through a
+                        haystack to find a needle. 
+                        </p>
+                        <p>To elaborate, the top-down approach if when a person starts making
+                        folders which could house the note they are about to make and then
+                        write the note. This is premature. User hastily defines a category that
+                        he/she sees fit at the time but when it comes to retrieval of a note, 
+                        he/she has to second-guess the bucket in which the note was put or 
+                        try searching for keywords (which sometimes help).
                         </p>
                         
                         <li class="sub-heading">Limitation of Existing system   
                             <ol class="roman-list">
-                                <li>It consume a lot of time.</li>
-                                <li>It requires a tracking updates.</li>
-                                <li>No security for data. Anyone who has 
-                                    access can modify or delete.
-                                </li>
-                                <li>Spreadsheet is not permanent. 
-                                    It is forgotten or lost after some time.
-                                </li> 
+                                <li>Note review is an afterthought.</li>
+                                <li>Information retrieval becomes sluggish.</li>
+                                <li>Digital notes are harder to review.</li>
+                                 
                                 
                             </ol>
                         </li>
                     </li>
                     <li>
                         <span class="sub-heading">Proposed System</span>
-                        <p>To solve such trivial yet cumbersome/inefficient problems, we created
-                            an online web application which keeps track of all the events in
-                            chronological order. This project is titled "Acropolis Event 
-                            Timeline". Any user can view all the recorded events. To edit or
-                            create a new post in the timeline user need to authenticate 
-                            himself/herself. Once authenticated, the user can create, update, or
-                            delete timeline posts. This data is stored in a local database and
-                            so is permanently modified.
+                        <p>To solve such trivial yet cumbersome/inefficient problems, 
+                        the proposed strategy is a bottom-up approach, where you make
+                        notes and put them in miscellaneous category, later you skim
+                        and tag your notes. Naturally they would start to form clusters.
+                        This way you organize your knowledge base at the same time 
+                        you don't get bogged down by mental load of which folder would 
+                        the note belong to pre-creation of a note.
                         </p>
                     </li>
                 </ol>
@@ -508,15 +514,13 @@
             <li>Testing strategy: Manual testing was done to build the prototype.</li>
             <li>Tests</li>
             <ol>
-                <li>Logging-in with correct credentials</li>
-                <li>Logging-in with incorrect credentials</li>
-                <li>Creating a post</li>
-                <li>What if the user did not provide title or date?</li>
-                <li>What if the user provides excessive amount of images</li>
-                <li>Editing a post</li>
-                <li>Deletion of images</li>
-                <li>Deletion of posts</li>
-                <li>What if there are no posts to display in timeline?</li>
+                <li>Testing selecting notes with certain key-value tags</li>
+                <li>Testing on empty files</li>
+                <li>Testing insertion of tags</li>
+                <li>Testing deletion of tags</li>
+                <li>Testing on various formats</li>
+                <li>Testing on empty folder</li>
+                <li>Testing with malformed input</li>
             </ol>       
         </ol>
     </section>
@@ -531,13 +535,11 @@
         <ol>
             <li class="main-heading">Future Scope</li>
             <ol>
-                <li>Deployment over server.</li>
-                <li>Secure login for admin.</li>
-                <li>Pagination and load more posts on page scroll.</li>
+                <li>Processing the body text of note.</li>
+                <li>Using Natural-Language-Processing to create a corpus of tags from given notes.</li>
+                <li>Variable subsitution like {Date.now} in insert command.</li>
                 <li>Storing and sending compressed images.</li>
-                <li>Optimized image loading. Sending images of best quality
-                    appropriate for device screen size.
-                </li>
+                <li>Showing a filtered view and saving the filtered view.</li>
             </ol>
         </ol>
     </section>

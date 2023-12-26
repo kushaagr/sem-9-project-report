@@ -237,6 +237,10 @@ li:before {
     counter-reset: item 1;
 }
 
+.start-from-3 {
+    counter-reset: item 2;
+}
+
 /*
 .start-from-2 {
     counter-increment: 3;
