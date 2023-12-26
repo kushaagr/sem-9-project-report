@@ -1,0 +1,19 @@
+Variables   = Value
+%Mr./Ms. = Mr.
+%NAME-1 = Kushagra Mehrotra
+%ENR-NUMBER-1 = 0827CA19DD18
+%SUPERVISOR = Dr. Arvind Jaiswal
+%DDFullM,YYYY = 
+%SEMESTER-NUMBER = 9
+%SESSION = 2023-24
+
+
+Ideas:
+
+: bat C:\git\project-report-4\Variables.txt -p | sed -n '10,$d;p' | ConvertFrom-Csv -Delimiter '='
+: Pwsh: foreach (line in getlines(Variables.txt)) {
+    split(line @ '=') |
+    trim end spaces
+    append keyvalue to collections.hashtable: hashtable[keyvalue[0]] = hashtable[keyvalue[1]]
+}
+: Pwsh: foreach (kv in $hashtable) { sed s/$key/$value/g }
