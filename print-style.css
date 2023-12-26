@@ -1,3 +1,5 @@
+/* Rendered useless now because style.css now has a @media print query */
+
 * {
     box-sizing: border-box;
     font-family: "Times New Roman";

@@ -269,3 +269,8 @@ li:before {
     outline: 2px solid black;
 }*/
 
+@media print {
+    section {
+        outline: none;
+    }
+}
