@@ -25,5 +25,5 @@ foreach ($e in $kv) {
     $lhs, $rhs = $e.Variables, $e.Value;
     sed -i s/$lhs/$rhs/g .\print.html ;
     # Start-Sleep -Milliseconds 1 
-    #Uncomment it if build produces an empty print.html
+    #// Uncomment it if build produces an empty print.html
 }
