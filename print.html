@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="3" > -->
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://livejs.com/live.js"></script>
+    <title>Project Report (Semester 9)</title>
+</head>
+<body>
+    <section class="front-page">
+        <h1>Efficient Strategy for Organizing Offline Notes</h1>
+        <h3>A MINOR PROJECT REPORT</h3>
+        <h3>Submitted in partial fulfillment of the requirement for the 
+            award of Degree of Master of Computer Applicaitons</h3>
+        <h4>Submitted to</h4>
+        <img src="img/rgpv-logo.png" alt="Logo of Rajiv Gandhi Prodyokigi Vishwavidyalaya (university)">
+        <h3>RAJIV GANDHI PRODYOGIKI VISHWAVIDYALAYA, BHOPAL (M.P.)</h3>
+        <h4>Submitted by:</h4>
+
+        <h3>Mr. Kushagra Mehrotra <br>
+        Enrollment No. 0827CA19DD18</h3>
+
+
+        <h4>Under the supervision of</h4>
+        <h3><u>Dr. Arvind Jaiswal</u></h3>
+        <img src="img/acropolis-named-logo.jpg" alt="Logo of Acropolis college (Indore) with its moto">
+        <h3>MASTER OF COMPUTER APPLICATIONS</h3>
+        <h3>ACROPOLIS INSTITUTE OF TECHNOLOGY & RESEARCH, INDORE</h3>
+        <h3>SESSON - 2023-24</h3>
+
+    </section>
+
+    <section class="certificate">
+        <h1>Department of Computer Applications <br>
+        AITR, Indore</h1>
+
+        <h2>BONAFIDE CERTIFICATE</h2>
+
+        <p>This is to certify that Major Project entitled <strong>"Efficient Strategy for Organizing Offline Notes"</strong>
+        being submitted my <strong>Mr. Kushagra Mehrotra (0827CA19DD18)</strong> for 
+        partial fulfillment of the requirement for the award of degree of 
+        <strong>Master of Computer Applications</strong> to <strong>Rajiv Gandhi Proudyogiki
+        Vishwavidyalaya, Bhopal (M.P.)</strong> during the academic year 2023-24 is a 
+        record of bonafide piece of work, carried out by the student under my supervision
+        and guidance in the <strong>Departmment of Computer Applications, AITR, Indore.</strong></p>
+
+        <div class="sign-block">
+            <p>
+                <strong>Prof. Geeta Santosh</strong>
+                <br>
+                Professor & HOD, MCA
+            </p>
+        </div>
+        <div class="sign-block">
+            <p>
+                <strong>(Internal Examiner)
+                <br>
+                Date: </strong>
+            </p>
+            <p>
+                <strong>(External Examiner)
+                <br>
+                Date: </strong>
+            </p>
+        </div>
+    </section>
+    
+    <section class="page">
+        <div class="header">
+            <div class="header__institute">
+                <img src="img/acropolis-logo.png" class="header__institute-logo" alt="Logo of Acropolis">
+                <h3 class="header__institute-name">
+                ACROPOLIS INSTITUTE OF TECHNOLOGY & RESEARCH, INDORE</h3>
+            </div>
+            <div class="header__department">(Faculty of Computer Applications)</div>
+        </div>
+        <h2>Abstract </h2>
+        <p>Effective note organization is paramount for information retrieval and productivity. This abstract introduces a strategy designed to elevate the organization of offline notes by incorporating the use of tags and embedded metadata. The proposed approach leverages the power of strategic tagging, allowing users to categorize notes based on themes, topics, or projects. Additionally, the embedding of metadata within notes provides contextual information, enhancing the depth of understanding and facilitating efficient retrieval. By adopting this strategy, users can transform their offline note repositories into dynamic and easily navigable knowledge hubs. The abstract outlines the key components of the strategy, emphasizing its potential to streamline information management, boost accessibility, and optimize the overall note-taking experience.</p>
+        
+    </section>
+
+    <section class="page">
+        <div class="header">
+            <div class="header__institute">
+                <img src="img/acropolis-logo.png" class="header__institute-logo" alt="Logo of Acropolis">
+                <h3 class="header__institute-name">
+                    ACROPOLIS INSTITUTE OF TECHNOLOGY & RESEARCH, INDORE</h3>
+            </div>
+            <div class="header__department">(Faculty of Computer Applications)</div>
+        </div>
+
+        <h2>Acknowledgement</h2>
+        <p>I would like to use this opportunity to extend my heartfelt gratitude to
+        our guide and supervisor of this project, <strong>Dr. Arvind Jaiswal</strong> who is reponsible 
+        for letting us explore this idea.</p>
+        <p>I am also thankful to <strong>Geeta Santosh</strong>, Head of Department of
+        Faculty of Computer Applications for cooperation and support to complete this work.
+        I would also like to express my thanks to <strong>Dr. S.C. Sharma</strong> Director
+        AITR Indore for providing necessary facilites. Thanks are due for all the staff members and 
+        lab staff of Faculty of Computer Applications AITR for providing help and support.</p>
+        <div class="student-info">
+            <strong>
+                Kushagra Mehrotra <br><br><br>
+                0827CA19DD18
+            </strong>
+        </div>
+
+    </section>
+
+<section class="page">
+    <h2 class="main-heading">Table of Contents</h2>
+    <table class="bordered-table">
+        <thead>
+            <tr>
+                <th>Sr. No </th>
+                <th>Content </th>
+                <th>Page No </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td>Title Page </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Bonafide Certificate </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Abstract </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Acknowledgement </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Table of Contents </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>List of Figures </td>
+                <td></td>
+            </tr>
+            <tr>
+                <th class="main-heading">1.</th>
+                <th class="main-heading">Introduction (Chapter 1)</th>
+                <th class="main-heading"></th>
+            </tr>
+            <tr>
+                <td></td>
+                <td>1.1 Brief description</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>1.2 Objectives</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>1.3 Methodology / Planning of work</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th class="main-heading">2.</th>
+                <th class="main-heading">System Analysis (Chapter 2)</th>
+                <th class="main-heading"></th>
+            </tr>
+            <tr>
+                <td></td>
+                <td>2.1 Feasibility study</td>
+                <td></td>
+            </tr>
+            <tr class="space-column">
+                <td></td>
+                
+                <td><span>&nbsp</span> 2.1.1 Technical feasibility</td>
+                <td></td>
+            </tr>
+            <tr class="space-column">
+                <td></td>
+                
+                <td><span>&nbsp</span> 2.1.2 Economic feasibility</td>
+                <td></td>
+            </tr>
+            <tr class="space-column">
+                <td></td>
+                
+                <td><span>&nbsp</span> 2.1.3 Behavioural feasibility</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>2.2 Drawbacks</td>
+                <td></td>
+            </tr>
+            <tr class="space-column">
+                <td></td>
+                
+                <td><span>&nbsp</span> 2.2.1 Identification of need</td>
+                <td></td>
+            </tr>
+            <tr class="space-column">
+                <td></td>
+                
+                <td><span>&nbsp</span> 2.2.2 Limitations of existing system</td>
+                <td></td>
+            </tr>
+            <tr class="space-column">
+                <td></td>
+                
+                <td><span>&nbsp</span> 2.2.3 Proposed system</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th class="main-heading">3.</th>
+                <th class="main-heading">Testing (Chapter 3)</th>
+                <th class="main-heading"></th>
+            </tr>
+            <tr>
+                <td></td>
+                <td>3.1 Testing methodology</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>3.2 Test cases</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th class="main-heading">4.</th>
+                <th class="main-heading">CONCLUSION (Chapter 4)</th>
+                <th class="main-heading"></th>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section class="page">
+        <h2 class="main-heading">List of Figures</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Fig No. </th>
+                    <th>Description of Figure </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Fig 1</td>
+                    <td>Screenshot: Preview section for files</td>
+                </tr>
+                <tr>
+                    <td>Fig 2</td>
+                    <td>Screenshot: Selecting files for a given tag</td>
+                </tr>
+                <tr>
+                    <td>Fig 3</td>
+                    <td>Screenshot: Indicator for selected file(s)</td>
+                </tr>
+                <tr>
+                    <td>Fig 4</td>
+                    <td>Screenshot: Insert new tag for selected file(s)</td>
+                </tr>
+                <tr>
+                    <td>Fig 5</td>
+                    <td>Screenshot: New tag inserted</td>
+                </tr>
+                <tr>
+                    <td>Fig 3</td>
+                    <td>Screenshot: Delete a tag from selected file(s)</td>
+                </tr>
+                <tr>
+                    <td>Fig 3</td>
+                    <td>Screenshot: A given tag deleted from selected file(s)</td>
+                </tr>
+                
+
+            </tbody>
+        </table>
+    </section>
+
+    <section class="page">
+        <h2>Introduction</h2>
+        <ol>
+            <li>
+                <span class="main-heading">Brief Description</span>
+                <p>The problem statement is of correctly categorizing your knowledge
+                base such that you can retrieve the desired information in fast and
+                efficient way. 
+                </p>
+                
+                <p>Managing a substantial number of notes, often ranging from 100 to 200 or more, poses challenges in effective
+                categorization and retrieval. While approximately half of the notes can be organized into meaningful
+                categories, the rest remain in a ’Miscellaneous’ category. This results in a time-consuming and
+                cumbersome retrieval process. The ”Personal Knowledge Management Toolkit” aims to address this
+                issue by creating an abstract graph of related notes, enhancing organization, and simplifying access.
+                </p>
+
+                <p>Offline note-taking with strategic organization empowers individuals to enhance their productivity and streamline information management. In a digital era where data overload is a common challenge, adopting a strategic approach to organizing offline notes becomes crucial for extracting maximum value from gathered information. By incorporating well-thought-out tagging systems and meticulous categorization, users can effortlessly retrieve and make sense of their notes. This method not only fosters a more efficient workflow but also cultivates a sense of order amidst the vast sea of information. Whether for work, study, or personal projects, mastering the art of offline note-taking with strategic organization enables individuals to transform their note repositories into dynamic, accessible knowledge hubs tailored to their specific needs. It's about more than just capturing thoughts; it's about curating a valuable resource that empowers individuals to navigate the complexities of their lives with ease and purpose.
+                </p>
+
+            </li>
+            <li><span class="main-heading">Objectives</span>
+                <ol>
+                    <li>To be able to quickly bulk edit notes</li>
+                    <li>To be able to select and tag many notes at once</li>
+                    <li>To be able to quickly scroll over present notes.</li>
+                    <li>To find notes fast without even using search.</li>
+                    <li>To collect notes into a group rather than put them into pre-defined buckets.</li>
+                </ol>
+            </li>
+
+        </ol>
+
+    </section>
+
+    <section class="page">
+        <ol class="start-from-3">
+            <li><span class="main-heading">Methodology / Planning of work</span>
+                <ol>
+                    <li>Gather details on current toolchain and ecosystem of offline note-taking.</li>
+                    <li>Observe usage patterns and note-taking habits of individual.</li>
+                    <li>Try various many techniques and combine their approach.</li>
+                    <li>Fail fast, experiment with prototypes, and encorporate criticism.</li>
+                    
+                </ol>
+            </li>
+        </ol>
+    </section>
+
+    <section class="page">
+        <h2>System Analysis</h2>
+        <ol>
+            <li> <span class="main-heading">Feasibility Study</span>
+                <ol>
+                    <li>
+                        <span class="sub-heading">Technical Feasibility</span>
+                        <p>System Architecture: The solution will be designed to integrate seamlessly with existing note-taking applications. Compatibility with various platforms and devices will be ensured to maximize accessibility.</p>
+                        <p>The system utilizes widespread note-taking format: Markdown, and it's capacity to store YAML content as its frontmatter.</p>
+
+                        <p>Data Storage: The system will require minimal additional storage, as tagging and metadata can be implemented efficiently within existing note structures.</p>
+
+                        <p>Security: Since the system is offline and operates locally it provides robust security ensuring no data is sent for telemetry to any source.
+                        </p>
+
+                    </li>
+                    <li>
+                        <span class="sub-heading">Economic Feasibility</span>
+                        <p>
+                        This is a very important aspect to the considered while developing a 
+                        project. We decided the technology based on minimum possible cost 
+                        factor.
+                        <ol class="roman-list">
+                            <li>The application is free to use but the availability is limited.</li>
+                            <li>The application could be open-sourced and freely distributed
+                            or monetized for a fee. There are no recurring costs to application.</li>
+                        </ol>
+                        </p>
+                    </li>
+                    <li>
+                        <span class="sub-heading">Behavioural feasibility</span>
+                        <p>No doubt the proposed system is partially GUI based but is very user 
+                        friendly. Input needs to be documented to be accessible by any individual. 
+                        A proper training may not be neccessary as the documentation when provided
+                        would provide all the commands the application can execute as the commands
+                        themselves are designed to be intuitive and user would get the hang of it 
+                        after using it for few times. Users are willing to use a piece of software
+                        as long as it prevents them from painstaking labor work of doing trivial
+                        chores.
+                        </p>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+    </section>
+
+    <section class="page">
+        <div class="header"></div>
+        <!-- <ol start="2" class="continue-page"> -->
+        
+        <!--  'start' attribute is not working. The reason has to do something with
+                counter-reset property used in css.
+            Anyway, to resolve the issue class start-from-2 is applied. -->
+        <ol start="2" class="start-from-2">
+            <!-- <span class="main-heading">2 Drawback of Existing System</span> -->
+            <li><span class="main-heading">Drawback of Existing System</span>
+                <!-- <li class="disable-list-style"></li> -->
+                <!-- <li class="disable-list-style"> -->
+                <ol>
+                    <li class="sub-heading"> Identification of need
+                        <span class="sub-heading">existing system</span>
+                        <p>In the current system, a user either follows a top-down approach
+                        of categorizing notes or wastes time linearly searching through a
+                        haystack to find a needle. 
+                        </p>
+                        <p>To elaborate, the top-down approach if when a person starts making
+                        folders which could house the note they are about to make and then
+                        write the note. This is premature. User hastily defines a category that
+                        he/she sees fit at the time but when it comes to retrieval of a note, 
+                        he/she has to second-guess the bucket in which the note was put or 
+                        try searching for keywords (which sometimes help).
+                        </p>
+                        
+                        <li class="sub-heading">Limitation of Existing system   
+                            <ol class="roman-list">
+                                <li>Note review is an afterthought.</li>
+                                <li>Information retrieval becomes sluggish.</li>
+                                <li>Digital notes are harder to review.</li>
+                                 
+                                
+                            </ol>
+                        </li>
+                    </li>
+                    <li>
+                        <span class="sub-heading">Proposed System</span>
+                        <p>To solve such trivial yet cumbersome/inefficient problems, 
+                        the proposed strategy is a bottom-up approach, where you make
+                        notes and put them in miscellaneous category, later you skim
+                        and tag your notes. Naturally they would start to form clusters.
+                        This way you organize your knowledge base at the same time 
+                        you don't get bogged down by mental load of which folder would 
+                        the note belong to pre-creation of a note.
+                        </p>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+    </section>
+
+    <section class="page">
+        <figure>
+            <img class="long-img" src="img/1.png"
+                alt="Screenshot of application">
+            <figcaption>Screenshot: Preview section for files</figcaption>
+        </figure>
+    </section>
+    <section class="page">
+        <figure>
+            <img class="long-img" src="img/2.png" 
+                alt="Screenshot of application">
+            <figcaption>Screenshot: Selecting files for a given tag</figcaption>
+        </figure>
+    </section>
+    <section class="page">
+        <figure>
+            <img class="long-img" src="img/3.png" 
+                alt="Screenshot of application">
+            <figcaption>Screenshot: Indicator for selected file(s)</figcaption>
+        </figure>
+    </section>
+    <section class="page">
+        <figure>
+            <img class="long-img" src="img/4.png" 
+                alt="Screenshot of application">
+            <figcaption>Screenshot: Insert new tag for selected file(s)</figcaption>
+        </figure>
+    </section>
+    <section class="page">
+        <figure>
+            <img class="long-img" src="img/5.png" 
+                alt="Screenshot of application">
+            <figcaption>Screenshot: New tag inserted</figcaption>
+        </figure>
+    </section>
+    <section class="page">
+        <figure>
+            <img class="long-img" src="img/6.png" 
+                alt="Screenshot of application">
+            <figcaption>Screenshot: Delete a tag from selected file(s)</figcaption>
+        </figure>
+    </section>
+    <section class="page">
+        <figure>
+            <img class="long-img" src="img/7.png" 
+                alt="Screenshot of application">
+            <figcaption>Screenshot: A given tag deleted from selected file(s)</figcaption>
+        </figure>
+    </section>
+
+<!--
+     <section class="page">
+        <figure>
+            <img src="img/dfd-level-0.png" alt="Data-flow diagram level-0">
+            <figcaption>Data-flow diagram level-0</figcaption>
+        </figure>
+    </section>
+    <section class="page">
+        <figure>
+            <img src="img/dfd-level-1.png" alt="Data-flow diagram level-1">
+            <figcaption>Data-flow diagram level-1</figcaption>
+        </figure>
+    </section>
+    <section class="page">
+        <figure>
+            <img src="img/dfd-level-2.png" alt="Data-flow diagram level-2">
+            <figcaption>Data-flow diagram level-2</figcaption>
+        </figure>
+    </section>
+-->
+
+    <section class="page">
+        <h2>Testing</h2>
+        <ol>
+            <li>Testing strategy: Manual testing was done to build the prototype.</li>
+            <li>Tests</li>
+            <ol>
+                <li>Testing selecting notes with certain key-value tags</li>
+                <li>Testing on empty files</li>
+                <li>Testing insertion of tags</li>
+                <li>Testing deletion of tags</li>
+                <li>Testing on various formats</li>
+                <li>Testing on empty folder</li>
+                <li>Testing with malformed input</li>
+            </ol>       
+        </ol>
+    </section>
+
+    <section class="page">
+        <h2>Conclusion</h2>
+        <p> The system has completed its first phase: design and prototyping.
+        With design down, the system can now move to final development phase.
+        There are many nuances yet to be thought over but the overall problem and 
+        solution is now concrete.</p>
+        
+        <ol>
+            <li class="main-heading">Future Scope</li>
+            <ol>
+                <li>Processing the body text of note.</li>
+                <li>Using Natural-Language-Processing to create a corpus of tags from given notes.</li>
+                <li>Variable subsitution like {Date.now} in insert command.</li>
+                <li>Storing and sending compressed images.</li>
+                <li>Showing a filtered view and saving the filtered view.</li>
+            </ol>
+        </ol>
+    </section>
+
+</body>
+</html>
